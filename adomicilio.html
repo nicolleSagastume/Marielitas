@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marielita</title>     
-    <link rel="stylesheet" href="index.css">
-    <link href="https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="adomicilio.css">
+    <link href="https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera" rel="stylesheet"><!--Importa el tipo de letra Stagera-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"><!--importa el tipo de letra que POPPINS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-                
+    <!--Link para pder utilizar los iconos que utilice en las tarjetas de menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />           
 </head>
 <body>
     <header>
         <div class="logo">
-           <img src="logo.png" alt="logo de la compañia" class="logo-img">
+           <img src="logo.png" alt="logo de la compañia" height="150px" class="logo-img"><!-- Se configura el logo que sale en la ezquina superior izquierda-->
         </div>
-        <nav>
+        <nav class="container-nav">
+            <!-- Enlaces de menu de navegacion-->
             <a href="index.html" class="nav-amarillo">Inicio</a>
             <a href="menu.html" class="nav-cafe">Menú</a>
             <a href="eventos.html" class="nav-amarillo">Eventos</a>
@@ -23,9 +27,11 @@
             <a href="galeria.html" class="nav-amarillo">Galería</a>
         </nav>
     </header>
+    <!--EL div que encierra el carrusel-->
         <div class="slider-box">
 
             <ul>
+                <!--Imagenes del carrusel-->
                 <li><img class="restaurante" src="https://thumbs.dreamstime.com/b/cocinero-experimentado-felicitado-por-cuatro-personas-en-un-restaurante-de-moda-114642027.jpg" alt="restaurante Marielita"></li>
                 <li><img class="restaurante" src="https://img.freepik.com/foto-gratis/camarero-feliz-sirviendo-comida-grupo-amigos-alegres-pub_637285-12525.jpg?semt=ais_hybrid&w=740" alt=" restaurante Marielita"></li>
                 <li><img class="restaurante" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/fc/5b/38/white-oaks-saloon.jpg?w=600&h=-1&s=1" alt="restaurante Marielita"></li>
@@ -37,4 +43,135 @@
                 <li><img class="restaurante" src="https://img.freepik.com/fotos-premium/barista-bonito-fazer-uma-xicara-de-cafe_13339-284411.jpg" alt="restaurante Marielita"></li>
             </ul>
 
+        </div><!--cierre del div del slider box-->
+
+        <h3> Adomicilio</h3><!--titulo-->
+        <div class="todo">
+            
+
+            <div class="container-cards"><!--contenedor de tarjetas-->
+                <div class="card">
+                    <div class="card_landing" style="--i:url(marielita.jpg)"><!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                        <h4>Ubicación</h4>
+                    </div>
+                    <div class="card_info">
+                        <div class="head">
+                            <p class="title">Ubicación</p>
+                            <div class="description">
+                                <div class="item">
+                                    <i class="fa-solid fa-location-dot"></i><!--iconos que mencione arriba-->
+                                    <p>Ciudad de Guatemala</p>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-clock"></i><!--iconos que mencione arriba-->
+                                    <p>7:00 - 16:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="title">Indicaciones:</p>
+                            <ul class="list">
+                                <li>1 Kilogramo de pescado</li>
+                                <li>1 cebolla cortada en julianas</li>
+                                <li>1 taza de caldo de pescado</li>
+                            </ul>
+                        </div>
+                        <div class="action">
+                            <a href="https://maps.app.goo.gl/TUhBBw2sHx4Q5oATA" class="btn">Ver Google maps</a><!--Lo dirije a google maps-->
+                        </div>
+                    </div>
+                </div>
+                <!--WHATSSAP-->
+                <div class="card">
+                    <div class="card_landing" style="--i:url(whats.png)"><!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                        <h4>Escríbenos</h4>
+                    </div>
+                    <div class="card_info">
+                        <div class="head">
+                            <p class="title">Escríbenos</p>
+                            <div class="description">
+                                <div class="item">
+                                    <i class="fa-solid fa-comments"></i><!--iconos que mencione arriba-->
+                                    <p>Dudas</p>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-mobile-screen-button"></i><!--iconos que mencione arriba-->
+                                    <p>4589-2390</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="title">Indicaciones:</p>
+                            <ul class="list">
+                                <li>1 Kilogramo de pescado</li>
+                                <li>1 cebolla cortada en julianas</li>
+                                <li>1 taza de caldo de pescado</li>
+                            </ul>
+                        </div>
+                        <div class="action">
+                            <a href="https://web.whatsapp.com/" class="btn">Contáctanos</a><!--Te direje a whatsapp-->
+                        </div>
+                    </div>
+                </div>
+                <!--NUMERO RESTAURANTE-->
+                <div class="card">
+                    <div class="card_landing" style="--i:url(llamar.jpg)"><!--Variable que utilce para que la configuracion que le de a esta, se le ponga a todas las imagenes que tienen el mismo nombre de variable-->
+                        <h4>LLámanos</h4>
+                    </div>
+                    <div class="card_info">
+                        <div class="head">
+                            <p class="title">Llámanos</p>
+                            <div class="description">
+                                <div class="item">
+                                    <i class="fa-solid fa-tty"></i><!--iconos que mencione arriba-->
+                                    <p>2436-7811</p>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-tty"></i><!--iconos que mencione arriba-->
+                                    <p>2436-1189</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="title">Indicaciones:</p>
+                            <ul class="list">
+                                <li>1 Kilogramo de pescado</li>
+                                <li>1 cebolla cortada en julianas</li>
+                                <li>1 taza de caldo de pescado</li>
+                            </ul>
+                        </div>
+                        <div class="action">
+                            <a href="#" class="btn">Ver Google maps</a><!-- esto no lleva a ningun lugar, solo es para diseño-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    <!-- Pie de página -->
+<footer>
+    <div class="footer-container">
+      <!-- Logo en el footer -->
+      <div class="footer-logo">
+        <img src="footer2.png" alt="Logo Marielita">
+      </div>
+      <!-- Información del pie de página -->
+      <div class="footer-info">
+        <p>Marielita © 2025</p>
+        <p>by Nicolle Sagastume C5A</p>
+        <!-- Iconos de redes sociales y contacto -->
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i class="fab fa-instagram"></i>
+          <a href="https://www.instagram.com/" target="_blank" class="icon instagram"></a><i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/1234567890" target="_blank" class="icon whatsapp"></a><i class="fab fa-facebook-f"></i>
+          <a href="https://goo.gl/maps/tuUbicacion" target="_blank"class="icon ubicacion" aria-label="Ubicación"></a><i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-phone-alt"></i><!-- Ícono de teléfono (no funciona) -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+        
