@@ -141,5 +141,37 @@ header{
 .restaurante img:hover {
       transform: scale(1.05); /* pequeño efecto al pasar el mouse */
     }
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.containes .title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details{
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%
+}
+
+
+
+
 
 
