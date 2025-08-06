@@ -187,7 +187,7 @@ header{
     border: 2px solid transparent;
     transition: all 0.3s ease;
 }
-.content .input-bos input:focus{
+.content .input-box input:focus{
     border-color: #C5A667;
     background-color:#fff;
 }
@@ -211,6 +211,7 @@ header{
     
     
     
+
 
 
 
