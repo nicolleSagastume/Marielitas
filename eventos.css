@@ -159,8 +159,9 @@ header{
     display: flex;
 }
 .content .image-box img{
-    width: 65px;
-    height: 65px
+    width: 100%;
+    border-radius: 5px;
+    
 }
 .content .topic{
     font-size: 22px;
@@ -213,6 +214,7 @@ header{
     
     
     
+
 
 
 
