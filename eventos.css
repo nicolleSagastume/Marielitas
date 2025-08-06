@@ -155,16 +155,54 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px 20px;
 }
-.content .image-box{
-    max-width: 55%;
+.content .image-box img{
+    width: 100%;
 }
 .content .topic{
     font-size: 22px;
     font-weight: 500;
     color: #C5A667;
 }
+.content form{
+    width: 40%;
+    margin-right: 30px;
+}
+.content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.content .input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    aoutline: none; 
+    padding-left: 16px;
+    background: #C5A667;
+    border: 2px solid transparent;
+}
+.content .input-box label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #C5A667;
+    pointer-events: none;
+    font-size: 15px;
+    transform: translate(-50%);
+}
+.content .input-box input:focus ~ label{
     
+    
+    
+    
+    
+    
+
 
 
 
