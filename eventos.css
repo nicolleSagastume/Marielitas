@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera);
+  @import url(https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera);
 
 *{
     box-sizing: border-box;
@@ -158,7 +158,7 @@ header{
     padding: 25px 20px;
 }
 .content .image-box img{
-    width: 100%;
+    width: 40%;
 }
 .content .topic{
     font-size: 22px;
@@ -211,6 +211,7 @@ header{
     
     
     
+
 
 
 
