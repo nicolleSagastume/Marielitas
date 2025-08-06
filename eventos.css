@@ -153,12 +153,21 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+.content .image-box{
+  width: 100%;
+  
+.content .topic{
+  font-size: 22px;
+  font-weight:500;
+  color: #ba24c2;
+  
 
     
     
     
     
     
+
 
 
 
