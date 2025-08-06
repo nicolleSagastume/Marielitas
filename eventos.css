@@ -185,6 +185,11 @@ header{
     padding-left: 16px;
     background: #C5A667;
     border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.content .input-bos input:focus{
+    border-color: #C5A667;
+    background-color:#fff;
 }
 .content .input-box label{
     position: absolute;
@@ -196,12 +201,17 @@ header{
     transform: translate(-50%);
 }
 .content .input-box input:focus ~ label{
+    top: 0;
+    left: 12px;
+    color: #C5A667;
+    background: #fff;
     
     
     
     
     
     
+
 
 
 
