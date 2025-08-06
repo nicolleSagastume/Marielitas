@@ -7,10 +7,12 @@
 }
 body{
     height: 100vh;
+    width: 100%;
     font-family: sans-serif;
     margin: 0;
     justify-content:center;
     align-items: center;
+    background: #fae9fb;
     
 
 }
@@ -144,12 +146,13 @@ header{
 .container{
     max-width: 1050px;
     width: 100%;
-    background-color:#683C11;
+    background-color:#fff;
     border-radius: 12px;
     margin: 0 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     
 }
+
 
 
 
