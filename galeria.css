@@ -138,7 +138,7 @@ header{
 .restaurante img:hover {
       transform: scale(1.05); /* pequeño efecto al pasar el mouse */
     }
-
+/*contenedor de imagenes**/
 .container .image-container{
         display: flex;
         flex-wrap: wrap;
@@ -146,6 +146,7 @@ header{
         justify-content: center;
         padding: 10px;
     }
+/*estilo para los cuadrados de la imagenes*/
 .container .image-container .image{
     height:250px;
     width: 350px;
@@ -154,15 +155,18 @@ header{
     overflow: hidden;
     cursor: pointer;
 }
+/*tmaño para las imagenes */
 .container .image-container .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
 }
+/*transicion como de zoom a la hora de pasar el cursor*/
 .container .image-container .image:hover img{
     transform: scale(1.1);
 }
+/* Estilo para el contenedor emergente (popup) que cubre toda la pantalla */
 .container .popup-image{
     position: fixed;
     top:0; left:0;
@@ -170,6 +174,33 @@ header{
     height: 100%;
     width: 100%;
     z-index: 100;
+    display: none;
+}
+/* Estilo para el botón de cierre (span) dentro del popup */
+.container .popup-image span{
+    position: absolute;
+    top:0; right:10px;/* Lo coloca en la esquina superior derecha */
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor:pointer;
+    z-index: 100; /* Asegura que esté por encima de la imagen */
+}
+/*imagen q sale cuando se apacha la imagen seleccionada*/
+.container .popup-image img{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+/*para que la imagen que se agranda se adapte el tamaño de la pntalla*/
+@media (max-width:768px){
+    .container .popup-image img{
+        width:95% ;
+    }
 }
 /*footer*/
 

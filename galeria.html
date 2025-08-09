@@ -58,9 +58,10 @@
                     alt="restaurante Marielita"></li>
         </ul>
 
-    </div>
+    </div><!--termina el clase para el carrrusel-->
+    <!--Contenedor de las imagenes-->
     <div class="container">
-        <div class="image-container">
+        <div class="image-container"><!--Contenedor solo de las imagenes-->
             <div class="image"><img src="cafe.jpg"></div>
             <div class="image"><img src="jugonaranja.jpg"></div>
             <div class="image"><img src="te.jpg"></div>
@@ -71,12 +72,27 @@
             <div class="image"><img src="jaleas.jpg"></div>
             <div class="image"><img src="topping.jpg"></div>
         </div>
+    
+        <div class="popup-image"><!--Contenedor de las imagenes cuando se agrandan -->
+            <span>&times;</span>
+            <img src="cafe.jpg" alt="">
+        </div>
     </div>
+    
+    <script>
+        // Selecciona todas las imágenes dentro de un contenedor con la clase 'image-container'
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{// Cuando el usuario hace clic en una imagen
+                document.querySelector('.popup-image').style.display = 'block';// Muestra el contenedor emergente (popup)
+                document.querySelector('.popup-image img').src = image.getAttribute('src');// Cambia la imagen del popup por la misma que el usuario seleccionó
+            }
+            
+        });
 
-    <div class="popup-image">
-        <span>&times;</span>
-        <img src="cafe.jpg" alt="">
-    </div>
+        document.querySelector('.popup-image span').onclick = () =>{// Cuando se hace clic en el botón/cierre (span) del popup...
+             document.querySelector('.popup-image').style.display = 'none';// Oculta el contenedor emergente (popup)
+        } 
+    </script>
 
 
     <!-- Pie de página -->

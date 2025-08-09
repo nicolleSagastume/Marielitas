@@ -147,6 +147,7 @@ header{
 .restaurante img:hover {
       transform: scale(1.05); /* pequeño efecto al pasar el mouse */
     }
+    /* Contenedor principal */
 .container{
     max-width: 1050px;
     width: 100%;
@@ -154,30 +155,32 @@ header{
     border-radius: 12px;
     margin: 30px 20px 30px 365px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    
 }
+/*Contenido interno del contenedor*/
 .container .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/*contenedor imagen*/
 .content .image-box{
     max-width: 65%;
 }
 .content .image-box img{
     max-width: 100%;
 }
+/*para el topic del formulario*/
 .content .topic{
     font-size: 30px;
     font-weight: "strong";
     color: #432918;
     font-family: 'Poppins';
-
 }
 .content form{
     width: 40%;
     margin-right: 30px;
 }
+/*configuracion para las entradas de los datos*/
 .content .input-box{
     height: 50px;
     width: 100%;
@@ -206,6 +209,7 @@ header{
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
+/*Efectos cuando el input tiene texto o se selecciona */
 .content .input-box input:focus,
 .content .input-box input:valid{
     border-color: #432918;
@@ -219,6 +223,7 @@ header{
     color: #432918;
     background: #fff;
 }
+/*caja de texto*/
 .content .message-box{
     min-height: 100px;
     position: relative;
@@ -255,6 +260,7 @@ header{
     background-color: #fff;
 
 }
+/*boton para enviar*/
 .content .input-box input[type="submit"]{
     color: #ffff;
     background: #432918;
@@ -265,7 +271,8 @@ header{
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
-.content .input-box input[typr="submit"]:hover{
+/*configuracion para el formulario y q se adapte al tamaño de la pantalla*/
+.content .input-box input[type="submit"]:hover{
     background-color:#C5A667;
 }
 @media (max-width:1000px) {
@@ -286,11 +293,6 @@ header{
 
     }
 }
-
-
-
-
-
 /*footer*/
 
  footer {

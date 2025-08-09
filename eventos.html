@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- EmailJS CDN (obsoleta, pero funcional por ahora) -->
+    
 
 </head>
 
@@ -59,33 +59,35 @@
                     alt="restaurante Marielita"></li>
         </ul>
     </div>
-
+<!--Contenedor para el formulario-->
     <div class="container">
         <div class="content">
-            <div class="image-box">
+            <div class="image-box"><!--contenedor de la imagen del formulario-->
                 <img src="logo.png" alt="">
             </div>
 
-            <form id="contact-form" action="https://formsubmit.co/sagastumealejandra2012@gmail.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/sagastumealejandra2012@gmail.com" method="POST"><!--la accion esta mi correo por lo mismo que explique abajo-->
                 <div class="topic">Contáctanos</div>
                 <div class="input-box">
-                    <input type="text" name="from_name" required>
+                    <input type="text" name="from_name" required><!--campos del furmulario-->
                     <label>Ingrese su nombre</label>
                 </div>
                 <div class="input-box">
-                    <input type="text" name="from_email" required>
+                    <input type="text" name="from_email" required><!--campos del furmulario-->
                     <label>Ingrese su email</label>
                 </div>
                 <div class="message-box">
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" required></textarea><!--campos del furmulario-->
                     <label>Comentario</label>
                 </div>
                 <div class="input-box">
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar"><!--boton para enviar-->
                 </div>
             </form>
         </div>
     </div>
+
+    <!--Esto de script trate de implementarlo para que el formulario enviara notificaciones a mi whatsapp y a correo pero no funciono. Lo decidi dejar porque seguire tratando-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         // Inicialización y configuración
