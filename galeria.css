@@ -1,36 +1,40 @@
+/* Importa la fuente Stagera desde un servidor externo */
 @import url(https://db.onlinewebfonts.com/c/9a1dbaf6a16e8e1152e96a59b3e24b53?family=Stagera);
 
+/* Estilos generales para todos los elementos */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/* Estilos base del cuerpo del documento */
 body{
     height: 100vh;
     font-family: sans-serif;
     margin: 0;
     justify-content:center;
-    align-items: center;
-    
-
+    align-items: center;  
 }
+/* Estilo del encabezado */
 header{
     display: flex;
-    height: 70px;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
+    align-items: start;
 }
 
+/* Contenedor del logo */
 .logo{
     display: flex;
     align-items: center;
+    margin-top: -25px;
 }
-
-.logo img{
-    height: 150px;
-
+/* contenedor de los nav*/
+.container-nav{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding-top: 20px;
 }
 .nav-amarillo {
     background-color:  #F4BC4A;
@@ -62,26 +66,19 @@ header{
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
     height: 90px; /* Aumenta la altura */
-
-  
-  
-    
 }
-
 .navbar-cafe a:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra elegante */
     height: 90px; /* Aumenta la altura */
-    
-    
 }
-
+/* Contenedor del slider de imágenes*/
 .slider-box {
-    width: 1280px;
+    width: 95% !important;
     height: auto;
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     overflow: hidden;
 }
 
@@ -140,4 +137,98 @@ header{
 
 .restaurante img:hover {
       transform: scale(1.05); /* pequeño efecto al pasar el mouse */
+    }
+
+.container .image-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+.container .image-container .image{
+    height:250px;
+    width: 350px;
+    border:10px solid #fff;
+    box-shadow: 0 5px 15px rgb(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.container .image-container .image:hover img{
+    transform: scale(1.1);
+}
+.container .popup-image{
+    position: fixed;
+    top:0; left:0;
+    background: rgb(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+/*footer*/
+
+ footer {
+      background-color: #3d2415;
+      padding: 20px 40px;
+      color: white;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+/* Logo de Marielita */
+    .footer-logo img {
+      height: 80px;
+    }
+/* Información de texto del footer */
+    .footer-info {
+      text-align: right;
+    }
+/* Márgenes de los textos en el footer */
+    .footer-info p {
+      margin: 4px 0;
+    }
+/* Contenedor de íconos sociales */
+    .social-icons {
+      margin-top: 10px;
+    }
+
+/* Estilo y animación de íconos sociales */
+    .social-icons i {
+      margin-left: 12px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.2);
+      color: #f3cba5;
+    }
+
+/* Ajustes para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-info {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .social-icons i {
+        margin: 0 8px;
+      }
     }
